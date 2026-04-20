@@ -2,19 +2,23 @@ package mortgageApprovalCalculator;
 
 public class Income extends Debt
 {
-	private int incomeBeforeTax;
-	Income(double totalMonthlyDebt, int incomeBeforeTax)
+	private double incomeBeforeTax;
+	Income(double totalMonthlyDebt, double incomeBeforeTax)
 	{
 		super(totalMonthlyDebt);
 		this.incomeBeforeTax = incomeBeforeTax;
 	}
-	public int getIncomeBeforeTax()
+	public double getIncomeBeforeTax()
 	{
 		return incomeBeforeTax;
 	}
-	public void setIncomeBeforeTax(int incomeBeforeTax)
+	public void setIncomeBeforeTax(double incomeBeforeTax)
 	{
 		this.incomeBeforeTax = incomeBeforeTax;
+	}
+	public double getMonthlyIncome()
+	{
+		return getIncomeBeforeTax()/12;
 	}
 	@Override
 	public String toString()

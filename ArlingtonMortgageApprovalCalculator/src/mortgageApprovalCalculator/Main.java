@@ -54,10 +54,10 @@ public class Main {
 		   System.out.print("Credit Score (250-850): ");
 		   int creditScore = input.nextInt();
 		   
-		   System.out.print("Hosue Price: $");
+		   System.out.print("House Price: $");
 		   double housePrice = input.nextDouble();
 		   
-		   System.out.print("Down Payemnt: $");
+		   System.out.print("Down Payment: $");
 		   double downPayment = input.nextDouble();
 		   
 		   System.out.println("Enter Credit Age: ");
